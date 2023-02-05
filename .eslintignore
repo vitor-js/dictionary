@@ -1,0 +1,6 @@
+# Directories
+/node_modules
+/next
+/public
+next-i18next.config.js
+next.config.js

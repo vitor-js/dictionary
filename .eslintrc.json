@@ -1,3 +1,78 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "root": true,
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "plugin:@next/next/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "@typescript-eslint",
+    "prettier",
+    "eslint-plugin-import-helpers"
+  ],
+  "rules": {
+    "indent": "off",
+    "react/jsx-curly-newline": "off",
+    "implicit-arrow-linebreak":"off",
+    "react/jsx-no-bind": "off",
+    "operator-linebreak": "off",
+    "arrow-parens": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/require-default-props": "off",
+    "react/prop-types": "off",
+    "no-undef": "off",
+    "object-curly-newline": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/function-component-definition": "off",
+    "arrow-body-style": "off",
+    "function-paren-newline":"off",
+    "react/react-in-jsx-scope": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "no-underscore-dangle": "off",
+    "no-empty-function": "off",
+    "@typescript-eslint/no-empty-function": "error",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".tsx"]
+      }
+    ],
+    "react/jsx-key": "error",
+
+    "no-use-before-define": "off"
+    // "import-helpers/order-imports": [
+    //   "warn",
+    //   {
+    //     "newlinesBetween": "always",
+    //     "groups": ["module", "/^@/", ["parent", "sibling", "index"]],
+    //     "alphabetize": {
+    //       "order": "asc",
+    //       "ignoreCase": true
+    //     }
+    //   }
+    // ]
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
 }
